@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Document</title>
+
+
+<link rel="stylesheet" href="../css/reset.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+
+<link href="jquery.text-marquee.min.css" rel="stylesheet" type="text/css" />
+<script src="jquery.text-marquee.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+body { font-family: 'Raleway'; min-height: 100vh; background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%); }
+.container { margin:0 auto; max-width: 960px; }
+.box {
+	padding: 10px;
+	max-width: 400px;
+	width: 100%;
+	color: #fff;
+	
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+	<div id="bounce" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+	<div id="loop" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#bounce').textMarquee({
+			// mode: 'loop'
+			mode: 'bounce'
+	});
+	$('#loop').textMarquee({
+			mode: 'loop'
+	});
+});
+</script>
+
+
+
+</body>
+</html>
